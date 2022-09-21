@@ -1,8 +1,0 @@
----
-- hosts: all
-  become: yes
-  tasks:
-   - name: iwant to install tree
-     apt:
-      name: tree
-      state: present
