@@ -6,11 +6,6 @@
     apt:
      name: apache2
      state: present
-  - name: i want to start webserver
-    service:
-    apt:
-      name: apache2
-      state: start
   - name: install webserver on RedHat nodes
     yum:
       name: httpd
