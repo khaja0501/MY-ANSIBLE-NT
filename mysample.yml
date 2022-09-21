@@ -10,3 +10,7 @@
     service:
       name: apache2
       state: stopped
+  - name: install webserver on redhat nodes
+     yum:
+      name: httpd
+       state: present 
