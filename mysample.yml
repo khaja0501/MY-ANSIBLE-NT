@@ -9,7 +9,7 @@
   - name: i want to start webserver
     service:
       name: apache2
-      state: stopped
+      state: start
   - name: install webserver on RedHat nodes
     yum:
       name: httpd
