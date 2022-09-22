@@ -1,0 +1,7 @@
+---
+- hosts: 172.31.88.91
+  become: yes
+  tasks:
+  - name: excute linux command directly
+    command: hostname -f
+    register: my result
