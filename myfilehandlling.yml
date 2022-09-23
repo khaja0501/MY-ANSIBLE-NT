@@ -7,3 +7,7 @@
     file:
       path: /home/ubuntu/myfolder
       state: directory
+  - name: copy a file
+    copy:
+      src: mystaticfile
+      dest: /home/ubuntu/mystaticfile.txt
