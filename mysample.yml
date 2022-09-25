@@ -4,5 +4,5 @@
   tasks:
   - name: i want ping all nodes
     ping:
-     name: all
+     name: ping
      state: present
