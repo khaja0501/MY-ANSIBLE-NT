@@ -1,8 +1,10 @@
 ---
-- hosts: all
-  become: yes
+- name: update web servers
+  hosts: 
   tasks:
-  - name: i want install apache2
-    apt:
-      name: apache2
-      state: present    
+  - name: Ensure install directory
+    file: 
+      path: /home/ubuntu/my_dir
+      state: present 
+...
+    
