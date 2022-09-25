@@ -2,7 +2,5 @@
 - hosts: all
   become: yes
   tasks:
-  - name: i want ping all nodes
-    ping:
-     sample: pong
-     state: present
+  - ping
+  
