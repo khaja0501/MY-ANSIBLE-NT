@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want ping all nodes
+    ping:
+     name: all
+     state: present
