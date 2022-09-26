@@ -2,9 +2,9 @@
 - hosts: all
   become: yes
   tasks:
-- name: ping all my nodes
-  ping:
-- name: install webserver on ubuntu nodes
-  apt:
-    name: apache2
-    state: present 
+  - name: ping all my nodes
+    ping:
+  - name: install webserver on ubuntu nodes
+    apt:
+     name: apache2
+     state: present 
