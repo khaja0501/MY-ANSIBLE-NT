@@ -6,22 +6,22 @@
     ping:
   - name: install webserver on ubuntu nodes
     apt:
-     name: "{{mywebpackonubuntu}}"
+     name: "{{mywebpackonUbuntu}}"
      state: present
     when: ansible_os_family=="Debian"
   - name: i want to start webserver on ubuntu nodes
     service:
-     name: "{{mywebpackonubuntu}}"
+     name: "{{mywebpackonUbuntu}}"
      state: started
     when: ansible_os_family=="Debian"
   - name: install webserver on redhat nodes
     yum:
-     name: "{{mywebpackonredhat}}"
+     name: "{{mywebpackonRedHat}}"
      state: present 
     when: ansible_os_family=="RedHat"
   - name: i want to start webserver on redhat nodes
     service:
-     name: "{{mywebpackonredhat}}"
+     name: "{{mywebpackonRedHat}}"
      state: started
     when: ansible_os_family=="RedHat"
         
