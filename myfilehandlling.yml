@@ -15,5 +15,9 @@
     apt:
      name: apache2
      state: present
-     
+  - name: copy a dynamic file
+    templete:
+     src: index.j2
+     dest: /www/var/html/index.html
+
      
