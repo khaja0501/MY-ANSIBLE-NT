@@ -3,5 +3,9 @@
   become: yes
   tasks:
   - name: i want to excute linux commands
-    command: hostname -f 
-    
+    command: hostname -f
+    register: myresult
+  - name: i want to display myresult
+    debug:
+     msg:"{{myresult}}"
+
