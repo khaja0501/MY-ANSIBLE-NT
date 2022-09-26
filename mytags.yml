@@ -1,6 +1,6 @@
 ---
 - hosts: 172.31.92.213
-  bocome: yes
+  become: yes
   tasks:
   - name: install tree
     apt:
@@ -14,4 +14,3 @@
     apt:
      name: git
      state: present
-     
