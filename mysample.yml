@@ -10,5 +10,5 @@
      state: present 
   - name: install webserver on redhat nodes
     yum:
-     name: httpt
+     name: httpd
      state: present   
