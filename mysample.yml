@@ -7,8 +7,11 @@
   - name: install webserver on ubuntu nodes
     apt:
      name: apache2
-     state: present 
+     state: present
+    when: ansible_os_family=="Debian" 
   - name: install webserver on redhat nodes
     yum:
      name: httpd
-     state: present   
+     state: present 
+    when: ansible_os_family=="RedHat"
+        
