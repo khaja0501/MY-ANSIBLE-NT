@@ -4,4 +4,3 @@
   tasks:
   - name: ping all my nodes
     ping:
-     state: present
