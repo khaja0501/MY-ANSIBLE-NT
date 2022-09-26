@@ -4,3 +4,7 @@
   tasks:
   - name: ping all my nodes
     ping:
+  - name: i want to install apache2
+    apt:
+     name: apache2
+     state: present
