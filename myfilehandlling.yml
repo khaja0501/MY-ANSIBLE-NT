@@ -18,6 +18,6 @@
   - name: copy a dynamic file
     templete:
      src: index.j2
-     dest: /www/var/html/index.html
+     dest: /var/www/html/index.html
 
      
