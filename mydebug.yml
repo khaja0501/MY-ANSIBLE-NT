@@ -7,5 +7,5 @@
     register: myresult
   - name: i want to display myresult
     debug:
-     msg:"{{myresult}}"
+     msg: "{{myresult}}"
 
