@@ -16,4 +16,9 @@
     apt:
      name: wget
      state: present
+  - name: install git
+    apt:
+     name: git
+     state: present
+
 
