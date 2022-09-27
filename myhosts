@@ -1,0 +1,9 @@
+[mywebservers]
+ 172.31.17.178
+
+[myappservers]
+ 172.31.17.174
+
+ [mydbservers]
+ 172.31.17.1
+ 172.31.17.02
